@@ -1,0 +1,6 @@
+2. 建立index.html，畫面如下：
+[http://i.imgur.com/xMW3bKd.png]
+
+
+使用thymeleaf功能載入*src/main/resources/static/css/bootstrap.css* <br>
+使Go to User list可以導到 *http://localhost:8080/users
