@@ -1,0 +1,5 @@
+3. 建立list.html，產生如下畫面：
+[http://i.imgur.com/QFsVxHo.png]
+
+ # 於畫面上顯示collection資料內容
+ # 角色為 *admin* 者，其username欄位以*紅色*標示
