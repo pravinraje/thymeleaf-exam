@@ -13,7 +13,7 @@ public class UserController {
 
 	@RequestMapping("/users")
 	String getUserPage(Model model) {
-		model.addAttribute("users", service.findAll());
+		model.addAttribute("users", service.getAll());
 		return "list";
 	}
 }

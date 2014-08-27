@@ -23,7 +23,16 @@ public class UserService {
 		cache.add(new UserDto(10L, "Van", "Lin", "van.lin", 1));
 	}
 
-	public List<UserDto> findAll() {
+	public List<UserDto> getAll() {
 		return cache;
+	}
+
+	public UserDto getByUserName(String username) {
+		for (UserDto user : cache) {
+			if (user.getUserName().equals(username)) {
+				return user;
+			}
+		}
+		return null;
 	}
 }
