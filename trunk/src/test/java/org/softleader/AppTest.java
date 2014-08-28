@@ -49,10 +49,18 @@ public class AppTest {
 		score += part2_2();
 		score += part3();
 
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println("========================================================================================================");
 		System.out.println("你的分數是" + score + "分");
 		System.out.println("請記得執行mvn source:jar");
 		System.out.println("將 thymeleaf-exam- firstname.lastname -sources.jar 與 thymeleaf-exam- firstname.lastname .jar");
 		System.out.println("寄到 steven.wang@softleader.com.tw");
+		System.out.println("========================================================================================================");
+		System.out.println();
+		System.out.println();
+		System.out.println();
 	}
 
 	private int part1() {
