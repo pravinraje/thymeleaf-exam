@@ -1,5 +1,6 @@
-==建立清單頁==
+==[https://code.google.com/p/thymeleaf-exam/wiki/3_Create_List_Page 建立清單頁]==
   || [http://i.imgur.com/Imyjlzc.png] ||
+  * 檔案名稱：*list.html*
   # 載入 *bootstrap.css* 
   # 建立一個 *div* ，並給定其css為 *container* ，並在其內容加入下列項目
     # *h1* 並給定其css為 *text-muted* 
