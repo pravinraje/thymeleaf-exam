@@ -165,7 +165,6 @@ public class AppTest {
 			score += 20;
 
 			String content = resultActions.andReturn().getResponse().getContentAsString();
-			System.out.println(content);
 			Document doc = Jsoup.parse(content);
 
 			if ("/css/bootstrap.css".equals(doc.select("link").attr("href"))) {
