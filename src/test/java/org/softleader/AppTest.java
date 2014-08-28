@@ -54,9 +54,9 @@ public class AppTest {
 		System.out.println();
 		System.out.println("========================================================================================================");
 		System.out.println("你的分數是" + score + "分");
-		System.out.println("請記得將 pom.xml 中的 <version> 1.0-SNAPSHOT </version> 修改為 <version> firstname.lastname </version>");
-		System.out.println("請記得執行mvn source:jar");
-		System.out.println("將 thymeleaf-exam- firstname.lastname -sources.jar 與 thymeleaf-exam- firstname.lastname .jar");
+		System.out.println("1. 請記得將 pom.xml 中的 <version> 1.0-SNAPSHOT </version> 修改為 <version> firstname.lastname </version>");
+		System.out.println("2. 請記得執行mvn source:jar");
+		System.out.println("3. 將 thymeleaf-exam- firstname.lastname -sources.jar 與 thymeleaf-exam- firstname.lastname .jar");
 		System.out.println("寄到 steven.wang@softleader.com.tw");
 		System.out.println("========================================================================================================");
 		System.out.println();
