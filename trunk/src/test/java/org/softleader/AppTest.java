@@ -50,6 +50,9 @@ public class AppTest {
 		score += part3();
 
 		System.out.println("你的分數是" + score + "分");
+		System.out.println("請記得執行mvn source:jar");
+		System.out
+				.println("將 thymeleaf-exam- firstname.lastname -sources.jar 與 thymeleaf-exam- firstname.lastname .jar 寄到 steven.wang@softleader.com.tw");
 	}
 
 	private int part1() {
