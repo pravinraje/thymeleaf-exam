@@ -7,10 +7,32 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import org.junit.Before;
 import org.junit.Test;
-import org.softleader.SpringMvcTest;
+import org.junit.runner.RunWith;
+import org.softleader.App;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
-public class HomeControllerTest extends SpringMvcTest {
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = {App.class})
+@WebAppConfiguration
+public class HomeControllerTest {
+	
+	@Autowired
+	WebApplicationContext ctx;
+
+	MockMvc mvc;
+
+	@Before
+	public void setUp() throws Exception {
+		mvc = MockMvcBuilders.webAppContextSetup(ctx).build();
+	}
 
 	@Test
 	public void index() throws Exception {
