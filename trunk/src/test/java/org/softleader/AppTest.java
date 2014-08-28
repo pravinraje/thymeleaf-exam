@@ -99,7 +99,7 @@ public class AppTest {
 				score += 2;
 			}
 
-			if ("User login".equals(doc.select(".container > h1").text())) {
+			if ("User login".equals(doc.select(".container > .text-muted").text())) {
 				score += 2;
 			}
 
@@ -123,12 +123,11 @@ public class AppTest {
 				score += 2;
 			}
 
-			if (doc.select(".container > form > button").hasClass("btn") && doc.select(".container > form > .btn").hasClass("btn-success")) {
+			if (doc.select(".container > form > .btn").hasClass("btn-success")) {
 				score += 2;
 			}
 
-			if (doc.select(".container > form > .btn-success > span").hasClass("glyphicon")
-					&& doc.select(".container > form > .btn-success > .glyphicon").hasClass("glyphicon-log-in")) {
+			if (doc.select(".container > form > .btn-success > .glyphicon").hasClass("glyphicon-log-in")) {
 				score += 2;
 			}
 
