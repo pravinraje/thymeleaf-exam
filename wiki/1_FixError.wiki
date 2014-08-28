@@ -1,2 +1,2 @@
-==[https://code.google.com/p/thymeleaf-exam/wiki/1_FixError 除錯]==
+==除錯==
   * 執行org.softleader.App，使其不會出現任何錯誤
