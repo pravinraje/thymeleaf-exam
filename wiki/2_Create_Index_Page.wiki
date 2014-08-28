@@ -1,7 +1,6 @@
-2. 建立index.html，畫面如下：
-[http://i.imgur.com/xMW3bKd.png]
-
-
-1. 使用thymeleaf功能載入*src/main/resources/static/css/bootstrap.css*
-<br>
-2. 使Go to User list可以導到 *http://localhost:8080/users
+建立首頁，畫面如下：
+   [http://i.imgur.com/EbrXVmu.png]
+   # 使用thymeleaf功能載入*src/main/resources/static/css/bootstrap.css*
+   # 輸入使用者名稱，導到 *http://localhost:8080/signin
+   # 輸入錯誤的使用者名稱，則顯示錯誤訊息
+   [http://i.imgur.com/PBSFsMY.png]
