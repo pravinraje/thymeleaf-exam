@@ -60,7 +60,7 @@ public class AppTest {
 				resultActions.andDo(print());
 			}
 			score += 20;
-		} catch (Exception e) {}
+		} catch (Throwable e) {}
 		return score;
 	}
 
@@ -123,7 +123,7 @@ public class AppTest {
 			if ("Login".equals(doc.select("div > form > button").text())) {
 				score += 2;
 			}
-		} catch (Exception e) {}
+		} catch (Throwable e) {}
 		return score;
 	}
 
@@ -143,7 +143,7 @@ public class AppTest {
 			if (doc.select(".container > form > .alert-danger").hasClass("alert")) {
 				score += 10;
 			}
-		} catch (Exception e) {}
+		} catch (Throwable e) {}
 		return score;
 	}
 
@@ -182,7 +182,7 @@ public class AppTest {
 			if (doc.select(".table-striped").select(".danger").size() == 5) {
 				score += 8;
 			}
-		} catch (Exception e) {}
+		} catch (Throwable e) {}
 		return score;
 	}
 }
