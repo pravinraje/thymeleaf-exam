@@ -1,6 +1,7 @@
-==建立首頁==
+==[https://code.google.com/p/thymeleaf-exam/wiki/2_Create_Index_Page 建立首頁]==
   || 一般 || [http://i.imgur.com/EbrXVmu.png] ||
   || 錯誤 || [http://i.imgur.com/PBSFsMY.png] ||
+  * 檔案名稱：*index.html*
   # 載入 *bootstrap.css* 
   # 建立一個 *div* ，並給定其css為 *container* ，並在其內容加入下列項目
     # *h1* 並給定其css為 *text-muted* 
