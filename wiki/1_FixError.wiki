@@ -1,2 +1,0 @@
-==除錯==
-  * 執行org.softleader.App，使其不會出現任何錯誤
