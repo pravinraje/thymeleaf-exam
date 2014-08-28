@@ -1,6 +1,13 @@
-建立首頁，畫面如下：
-   [http://i.imgur.com/EbrXVmu.png]
-   # 使用thymeleaf功能載入*src/main/resources/static/css/bootstrap.css*
-   # 輸入使用者名稱，導到 *http://localhost:8080/signin
-   # 輸入錯誤的使用者名稱，則顯示錯誤訊息
-   [http://i.imgur.com/PBSFsMY.png]
+==建立首頁==
+  || 一般 || [http://i.imgur.com/EbrXVmu.png] ||
+  || 錯誤 || [http://i.imgur.com/PBSFsMY.png] ||
+  # 載入 *bootstrap.css* 
+  # 建立一個 *div* ，並給定其css為 *container* ，並在其內容加入下列項目
+    # *h1* 並給定其css為 *text-muted* 
+    # *div* 並給定其css為 *alert alert-danger* ，當有錯誤訊息時，則顯示
+    # *form* form submit的位置為 */signin* ，並在其內容加入下列項目
+      # *div* 並給定其css為 *form-group* ，並在其內容加入下列項目
+        # *label* 並加入當滑鼠點擊此 *label* 時，*input* 則會 *focus*
+        # *input* 並給定其css為 *form-control* 
+      # *button* 並給定其css為 *btn btn-success* ，並在其內容加入下列項目
+        # *span* ，並給定css為 *glyphicon glyphicon-log-in*
