@@ -83,44 +83,44 @@ public class AppTest {
 				score += 2;
 			}
 
-			if (doc.select("div > form > h1").hasClass("text-muted")) {
+			if (doc.select(".container > h1").hasClass("text-muted")) {
 				score += 2;
 			}
 
-			if ("User login".equals(doc.select("div > form > h1").text())) {
+			if ("User login".equals(doc.select(".container > h1").text())) {
 				score += 2;
 			}
 
-			if ("/signin".equals(doc.select("div > form").attr("action"))) {
+			if ("/signin".equals(doc.select(".container > form").attr("action"))) {
 				score += 5;
 			}
 
-			if (doc.select("div > form > div").hasClass("form-group")) {
+			if (doc.select(".container > form > div").hasClass("form-group")) {
 				score += 2;
 			}
 
-			if ("Username".equals(doc.select("div > form > div > label").text())) {
+			if ("Username".equals(doc.select(".container > form > .form-group > label").text())) {
 				score += 2;
 			}
 
-			if (doc.select("div > form > div > input").hasClass("form-control")) {
+			if (doc.select(".container > form > .form-group > input").hasClass("form-control")) {
 				score += 2;
 			}
 
-			if ("username".equals(doc.select("div > form > div > input").attr("name"))) {
+			if ("username".equals(doc.select(".container > form > .form-group > .form-control").attr("name"))) {
 				score += 2;
 			}
 
-			if (doc.select("div > form > button").hasClass("btn") && doc.select("div > form > button").hasClass("btn-success")) {
+			if (doc.select(".container > form > button").hasClass("btn") && doc.select(".container > form > .btn").hasClass("btn-success")) {
 				score += 2;
 			}
 
-			if (doc.select("div > form > button > span").hasClass("glyphicon")
-					&& doc.select("div > form > button > span").hasClass("glyphicon-log-in")) {
+			if (doc.select(".container > form > .btn-success > span").hasClass("glyphicon")
+					&& doc.select(".container > form > .btn-success > .glyphicon").hasClass("glyphicon-log-in")) {
 				score += 2;
 			}
 
-			if ("Login".equals(doc.select("div > form > button").text())) {
+			if ("Login".equals(doc.select(".container > form > .btn-success").text())) {
 				score += 2;
 			}
 		} catch (Throwable e) {}
@@ -137,11 +137,13 @@ public class AppTest {
 				resultActions.andDo(print());
 			}
 
+			score += 5;
+
 			String content = resultActions.andReturn().getResponse().getContentAsString();
 			Document doc = Jsoup.parse(content);
 
-			if (doc.select(".container > form > .alert-danger").hasClass("alert")) {
-				score += 10;
+			if (doc.select(".container > .alert-danger").hasClass("alert")) {
+				score += 5;
 			}
 		} catch (Throwable e) {}
 		return score;
