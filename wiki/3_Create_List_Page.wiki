@@ -1,8 +1,0 @@
-==建立清單頁==
-  || [http://i.imgur.com/Imyjlzc.png] ||
-  * 檔案名稱：*list.html*
-  # 載入 *bootstrap.css* 
-  # 建立一個 *div* ，並給定其css為 *container* ，並在其內容加入下列項目
-    # *h1* 並給定其css為 *text-muted* 
-    # *table* 於畫面上顯示user collection資料內容 並給定其css為 *table table-striped*
-    # 當角色為 *admin* 者，其username欄位以 *紅色* 標示
